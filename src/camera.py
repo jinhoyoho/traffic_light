@@ -54,11 +54,11 @@ class IMGParser:
                         if abs(left - right) > abs(bottom - top):
                             continue
 
-                        self.traffic_image_pub.publish(self.br.cv2_to_imgmsg(traffic_image_copy))
+                        self.traffic_image_pub.publish(self.br.cv2_to_imgmsg(image_copy[bottom:top, left:right]))
 
-                # img = results[0].plot()
-            
-                # cv2.imshow("Image window", image_copy)
+                # Plot yolo image
+                # img = results[0].plot()            
+                # cv2.imshow("Image window", img)
                 # if cv2.waitKey(1) == ord('q'):
                 #     break
 

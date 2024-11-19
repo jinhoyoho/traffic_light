@@ -19,7 +19,7 @@ def update(val=0):
     result = cv2.bitwise_and(frame, frame, mask=mask)
     cv2.imshow('Result', result)
 
-frame = cv2.imread("/home/jinho/catkin_ws/traffic_crop_red.jpg")
+frame = cv2.imread("path/your/photo.jpg")
 
 
 hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)

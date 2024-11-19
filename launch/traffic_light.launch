@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="traffic_light" type="camera.py" name="camera_node"></node>
+    <node pkg="traffic_light" type="traffic_light" name="traffic_light_node"></node>
+</launch>
